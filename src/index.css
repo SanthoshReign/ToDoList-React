@@ -1,0 +1,77 @@
+body{
+  background-color: hsl(0, 0%, 50%);
+  font-family: Arial, sans-serif;
+}
+.todolist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.heading{
+  font-size: 4rem;
+}
+
+.inputBox {
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+.addButton{
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: hsl(120, 100%, 55%);
+  font-weight: bold;
+  border: 2px solid hsl(120, 100%, 20%);
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.addButton:hover{
+  background-color: hsl(120, 100%, 45%);;
+}
+
+.taskList{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-right: 45px;
+}
+.task{
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex: 1;
+  min-width: 350px;
+}
+.deleteButton, .moveButton{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.deleteButton{
+  background-color: hsl(0, 100%, 55%);
+  border: 2px solid hsl(0, 100%, 20%);
+}
+.deleteButton:hover{
+  background-color: hsl(0, 100%, 45%);
+}
+
+.moveButton{
+  background-color: hsl(0, 0%, 63%);
+  border: 2px solid hsl(0, 0%, 20%);
+}
+.moveButton:hover{
+  background-color: hsl(0, 0%, 53%);
+}
